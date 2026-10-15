@@ -1,47 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Charity Water Landing Page</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>charity: water | 100% of Your Gift Brings Clean Water</title>
+
+  <!-- Poppins font from Google Fonts (matches the Canva mockup) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Hero Section: This is the main banner at the top of the page -->
-    <section class="hero">
-        <!-- Main headline -->
-        <h1>Clean Water for Everyone</h1>
-        <!-- Subheadline -->
-        <p>Join us in bringing safe, clean water to communities in need.</p>
-    </section>
 
-    <!-- Story Section: This tells the story of the nonprofit -->
-    <section class="story">
-        <h2>Our Story</h2>
-        <p>
-         
-    </section>
+  <!-- ===== NAVIGATION BAR ===== -->
+  <header class="navbar">
+    <a href="#" class="logo">
+      <!-- Put your jerry can logo in the img folder and name it logo.jpg -->
+      <img src="img/logo.jpg" alt="charity: water jerry can logo">
+      <span>Charity Water</span>
+    </a>
 
-    <!-- Real-World Impact Story Section -->
-    <section class="impact-story">
-        <!-- Section headline -->
-        <h2>Real Impact: Meet Amina</h2>
-        <!-- Container for image and text -->
-        <div class="impact-content">
-            <!-- Impact image -->
-            <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80" alt="Amina smiling with clean water" class="impact-image">
-            <!-- Impact story text -->
-            <p>
-                Amina used to walk miles every day to collect water for her family. Thanks to your support, her village now has a clean water well. Amina can go to school and her family is healthier and happier.
-            </p>
-        </div>
-    </section>
+    <nav class="nav-links">
+      <a href="#" class="active">Home</a>
+      <a href="#story">About Us</a>
+      <a href="#support">Support</a>
+      <a href="#gallery">Gallery</a>
+    </nav>
 
-    <!-- Call-to-Action Section: This encourages visitors to take action -->
-    <section class="call-to-action">
-        <h2>Make a Difference</h2>
-        <p>Your support can help save lives. Every donation brings us closer to a world with clean water for all.</p>
-        <a href="#" class="donate-button">Donate Now</a>
-    </section>
+    <a href="https://www.charitywater.org/donate" class="btn-outline" target="_blank">support now</a>
+  </header>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>100% of Your Gift Brings Clean Water</h1>
+      <p>
+        Private donors cover our costs, so every dollar you give funds clean water.
+        Track your impact with real photos and GPS locations.
+      </p>
+
+      <div class="hero-actions">
+        <a href="https://www.charitywater.org/donate" class="btn-pill" target="_blank">
+          <span class="dot"></span>
+          Change a Life Today
+        </a>
+
+        <!-- Share icon (drawn with SVG so no image file is needed) -->
+        <a href="#" class="share" aria-label="Share this page">
+          <svg viewBox="0 0 24 24" width="40" height="40">
+            <circle cx="5" cy="5" r="2.5"/>
+            <circle cx="5" cy="19" r="2.5"/>
+            <circle cx="19" cy="12" r="2.5"/>
+            <line x1="5" y1="5" x2="19" y2="12"/>
+            <line x1="5" y1="19" x2="19" y2="12"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-image">
+      <!-- Put your photo in the img folder and name it hero.jpeg -->
+      <img src="img/hero.jpeg" alt="A smiling woman filling yellow jerry cans at a water pump">
+    </div>
+  </section>
+
+  <!-- ===== STORY SECTION ===== -->
+  <section class="story" id="story">
+    <h2>Why It Matters</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Time</h3>
+        <p>In many communities, women and girls walk hours every day to collect water, time that could go to school or work.</p>
+      </div>
+      <div class="card">
+        <h3>Health</h3>
+        <p>Dirty water spreads disease. A clean, nearby source keeps kids healthy and in class.</p>
+      </div>
+      <div class="card">
+        <h3>Proof</h3>
+        <p>Every project is tracked with photos and GPS, so you can see exactly where your money went.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FINAL CALL TO ACTION ===== -->
+  <section class="cta" id="support">
+    <h2>College students can change this.</h2>
+    <p>Start a fundraiser with your club, dorm, or friends, or give what you can today.</p>
+    <a href="https://www.charitywater.org/donate" class="btn-pill" target="_blank">
+      <span class="dot"></span>
+      Give Clean Water
+    </a>
+  </section>
+
+  <footer>
+    <p>Student project inspired by charity: water. Not affiliated with the organization.</p>
+  </footer>
+
 </body>
 </html>
